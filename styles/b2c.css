@@ -1,0 +1,320 @@
+#hero{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    & .sc{
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        & *{
+            color: var(--col-1-);
+        }
+        & article{
+            position: absolute;
+            width: 35vw;
+            margin-left: 10vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 8px;
+            z-index: 4;
+    
+            & h2{
+                font-weight: 500;
+            }
+        }
+        & img{
+            position: absolute;
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            object-fit: cover;
+            z-index: 1;
+            filter: brightness(70%);
+        }
+    }
+    & .er{
+        position: relative;
+        width: 80vw;
+        padding: 200px 10vw;
+        border-radius: 50px 50px 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        z-index: 10;
+        background-color: var(--col-1-);
+
+        & aside{
+            height: auto;
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 200px;
+
+            & .cont{
+                width: 40vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                gap: 32px;
+
+                & .item{
+                    height: auto;
+                    width: 13vw;
+
+                    & h3{
+                        color: var(--col-6-);
+                    }
+                }
+            }
+        }
+        & .text{
+            height: auto;
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+        }
+    }
+}
+#pic1{
+    height: auto;
+    width: 80vw;
+    padding-left: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+
+    & img{
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    & article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+    }
+}
+#pic2{
+    height: auto;
+    padding-top: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+
+    & article{
+        width: 40vw;
+        margin-left: 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    & section{
+        position: relative;
+        height: 75vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+#pic3{
+    height: auto;
+    padding: 200px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    & article{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+
+        & *{
+            width: 40vw;
+            text-align: center;
+        }
+    }
+    & .n1{
+        position: relative;
+        height: 60vh;
+        width: 15vw;
+        object-fit: cover;
+        margin-left: 5vw;
+
+        & img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    & .n2{
+        position: relative;
+        height: 60vh;
+        width: 15vw;
+        object-fit: cover;
+        margin-right: 5vw;
+
+        & img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 1024px){
+    #hero{
+    
+        & .sc{
+    
+            & article{
+                width: 80vw;
+            }
+        }
+        & .er{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 50px;
+    
+            & aside{
+                width: 80vw;
+                gap: 20px;
+    
+                & .cont{
+                    width: 80vw;
+    
+                    & .item{
+                        width: auto;
+                    }
+                }
+            }
+            & .text{
+                width: 80vw;
+            }
+        }
+    }
+    #pic1{
+    
+        & article{
+            width: 50vw;
+        }
+    }
+    #pic2{
+    
+        & article{
+            width: 60vw;
+        }
+    }
+    #pic3{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 80px;
+    
+        & article{
+            width: 80vw;
+    
+            & *{
+                width: 80vw;
+                text-align: center;
+            }
+        }
+        & .n1{
+            position: relative;
+            height: 25vh;
+            width: 70vw;
+            object-fit: cover;
+            margin-left: 0;
+        }
+        & .n2{
+            position: relative;
+            height: 25vh;
+            width: 70vw;
+            object-fit: cover;
+            margin-right: 0;
+    
+        }
+    }
+}
+@media (max-width: 768px){
+    #hero{
+    
+        & .sc{
+    
+            & article{
+                width: 90vw;
+                margin-left: 5vw;
+            }
+        }
+    }
+}
+@media (max-width: 480px){
+    #pic1{
+        width: 90vw;
+        padding-left: 10vw;
+    
+        & img{
+            width: 90vw;
+        }
+        & article{
+            width: 70vw;
+        }
+    }
+    #pic2{
+    
+        & article{
+            width: 80vw;
+        }
+    }
+    #pic3{
+    
+        & .n1{
+            width: 80vw;
+        }
+        & .n2{
+            width: 80vw;
+        }
+    }
+}
