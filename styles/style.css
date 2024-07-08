@@ -45,6 +45,9 @@ html{
     }
 }
 @media (max-width: 768px){
+    :root{
+        --sz-2-: 6rem;
+    }
     html{
         font-size: 13px;
     }
@@ -377,10 +380,10 @@ header{
             padding: 40px;
             display: none;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: flex-start;
 
-            & .stars{
+            /*& .stars{
                 display: flex;
                 flex-direction: row;
                 justify-content: flex-start;
@@ -403,9 +406,9 @@ header{
                         background-color: #ecdc29;
                     }
                 }
-            }
+            }*/
             & .dis{
-                width: 50%;
+                width: 70%;
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
@@ -564,6 +567,7 @@ header{
             justify-content: center;
             align-items: center;
             gap: 15px;
+            background-color: var(--col-1-);
 
             & i{
                 transition: all 300ms ease;
