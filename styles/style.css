@@ -604,6 +604,7 @@ footer{
     position: relative;
     padding: 15px 30px;
     background-color: var(--col-1-);
+    border: none;
     border-radius: 30px;
     border: none;
     display: flex;
