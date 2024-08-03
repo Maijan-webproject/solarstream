@@ -24,7 +24,7 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            gap: 8px;
+            gap: 16px;
             z-index: 4;
     
             & h2{
