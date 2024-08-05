@@ -46,7 +46,7 @@ html{
         --sz-7-: 0.918rem;
     }
     html{
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 @media (max-width: 768px){
@@ -58,7 +58,7 @@ html{
         --sz-7-: 1.18rem;
     }
     html{
-        font-size: 10px;
+        font-size: 11px;
     }
 }
 @media (max-width: 480px){
@@ -71,7 +71,7 @@ html{
         --sz-7-: 1.38rem;
     }
     html{
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 body{
