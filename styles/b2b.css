@@ -14,6 +14,7 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
+        z-index: 2;
 
         & *{
             color: var(--col-1-);
@@ -53,6 +54,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 20vh;
+        z-index: 10;
 
         & article{
             width: 50vw;

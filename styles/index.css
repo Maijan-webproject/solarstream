@@ -34,7 +34,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 8;
+        z-index: 16;
     }
     & .info3{
         position: relative;
