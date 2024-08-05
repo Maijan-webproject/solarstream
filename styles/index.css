@@ -5,6 +5,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 300px;
+    background-color: transparent;
 
     & section{
         position: sticky;
@@ -17,7 +18,7 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        z-index: 2;
+        z-index: -5;
 
         & video{
             height: 100vh;
