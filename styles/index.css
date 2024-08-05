@@ -25,17 +25,17 @@
             width: 100vw;
             object-fit: cover;
         }
-    }
-    & .h{
-        position: absolute;
-        top: 30vh;
-        width: 100vw;
-        height: 40vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        z-index: 16;
+        & .h{
+            position: absolute;
+            top: 30vh;
+            width: 100vw;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 4;
+        }
     }
     & .info3{
         position: relative;
