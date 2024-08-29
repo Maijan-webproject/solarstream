@@ -20,11 +20,11 @@
     --font-2-: "Inter", sans-serif;
 
     --sz-1-: 11.089rem;
-    --sz-2-: 6.854rem;
-    --sz-3-: 4.236rem;
-    --sz-4-: 2.618rem;
-    --sz-5-: 1.618rem;
-    --sz-6-: 1.1rem;
+    --sz-2-: 7.854rem;
+    --sz-3-: 5.236rem;
+    --sz-4-: 3.318rem;
+    --sz-5-: 1.918rem;
+    --sz-6-: 1.25rem;
     --sz-7-: 0.618rem;
 }
 
@@ -36,7 +36,7 @@
 }
 html{
     height: auto;
-    font-size: 15px;
+    font-size: 13px;
     scroll-behavior: smooth;
 }
 @media (max-width: 1024px){
@@ -105,19 +105,19 @@ h1{
 h2{
     font-size: var(--sz-2-);
     font-family: var(--font-2-);
-    font-weight: 500;
+    font-weight: 700;
     line-height: 100%;
 }
 h3{
     font-size: var(--sz-3-);
     font-family: var(--font-1-);
-    font-weight: 500;
+    font-weight: 700;
     line-height: 100%;
 }
 h4{
     font-size: var(--sz-4-);
     font-family: var(--font-2-);
-    font-weight: 400;
+    font-weight: 600;
     line-height: 110%;
 }
 h5{
@@ -156,6 +156,7 @@ img{
 
 *.solarShape1{
     position: relative;
+
     &::before{
         content: "";
         position: absolute;
@@ -240,7 +241,27 @@ img{
     }
 }
 
+#ip{
+    height: auto;
+    padding: 200px 20vw 0 20vw;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4px;
 
+    & .spTop1{
+        margin-top: 40px;
+    }
+    & .spTop2{
+        margin-top: 12px;
+    }
+    & *{
+
+    }
+
+}
 
 
 header{
@@ -347,6 +368,7 @@ header{
 }
 #rez{
     height: auto;
+    margin-top: 50px;
     padding: 200px 0 0 0;
     border-radius: 50px 50px 0 0;
     display: flex;
