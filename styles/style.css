@@ -629,7 +629,7 @@ footer{
     background-color: var(--col-1-);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 32px;
@@ -766,7 +766,7 @@ footer{
         padding: 150px 10vw;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: flex-start;
         gap: 32px;
     
